@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <checkout_cart_index>
+        <reference name="before_body_end">
+            <block type="proxiblue_floodlighttags/tag" name="checkout.cart.floodlighttags" template="floodlighttags/tag.phtml">
+                <action method="setEnabledCheck">
+                    <value>cart</value>
+                </action>
+                <action method="setType">
+                    <value>Check0</value>
+                </action>
+                <action method="setCat">
+                    <value>Check0</value>
+                </action>
+            </block>
+        </reference>
+    </checkout_cart_index>
+    <checkout_onepage_success>
+        <reference name="before_body_end">
+            <block type="proxiblue_floodlighttags/checkout_success" name="checkout.success.floodlighttags" template="floodlighttags/checkout/default.phtml">
+                <action method="setEnabledCheck">
+                    <value>checkout_success</value>
+                </action>
+            </block>
+        </reference>
+    </checkout_onepage_success>
+    <checkout_onepage_index>
+        <reference name="before_body_end">
+            <block type="proxiblue_floodlighttags/tag" name="checkout.review.floodlighttags" template="floodlighttags/tag.phtml">
+                <action method="setEnabledCheck">
+                    <value>checkout_review</value>
+                </action>
+                <action method="setType">
+                    <value>Check0</value>
+                </action>
+                <action method="setCat">
+                    <value>Step20</value>
+                </action>
+            </block>
+        </reference>
+    </checkout_onepage_index>
+    <!-- eaxmple on making a specific product tag appear -->
+<!--    <PRODUCT_5>
+        <reference name="before_body_end">
+            <block type="proxiblue_floodlighttags/tag" name="checkout.review.floodlighttags" template="floodlighttags/tag.phtml">
+                <action method="setEnabledCheck">
+                    <value>checkout_products</value>
+                </action>
+                <action method="setType">
+                    <value>Shop0</value>
+                </action>
+                <action method="setCat">
+                    <value>Floor00</value>
+                </action>
+            </block>
+        </reference>
+    </PRODUCT_5>-->
+</layout>

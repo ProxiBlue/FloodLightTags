@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ *    This Module is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This Module is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this module.
+ *    If not, see <http://www.gnu.org/licenses/>.
+ *
+ *    ProxiBlue is in no way affiliated to DoubleCLick.
+ *    This module is not an officially endorsed module for magento by DoubleCLick
+ * */
+-->
+<config>
+    <modules>
+        <ProxiBlue_FloodLightTags>
+            <version>1.0.0</version>
+        </ProxiBlue_FloodLightTags>
+    </modules>
+    <global>
+        <blocks>
+            <proxiblue_floodlighttags>
+                <class>ProxiBlue_FloodLightTags_Block</class>
+            </proxiblue_floodlighttags>
+        </blocks>
+        <helpers>
+            <proxiblue_floodlighttags>
+                <class>ProxiBlue_FloodLightTags_Helper</class>
+            </proxiblue_floodlighttags>
+        </helpers>
+        <models>
+            <proxiblue_floodlighttags>
+                <class>ProxiBlue_FloodLightTags_Model</class>
+            </proxiblue_floodlighttags>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <proxiblue_floodlighttags>
+                    <file>floodlighttags.xml</file>
+                </proxiblue_floodlighttags>
+            </updates>
+        </layout>
+    </frontend>
+</config>
